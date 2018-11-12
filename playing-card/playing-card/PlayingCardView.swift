@@ -9,15 +9,24 @@
 import UIKit
 
 class PlayingCardView: UIView {
+    
+    private func centeredAttributedString(_ string: String, fontSize: CGFloat) -> NSAttributedString {
+        
+        var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
+        font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font) //allow auto-change font size if user do that in Settings of iPhone
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+        
+        return NSAttributedString(string: string, attributes: [.paragraphStyle:paragraphStyle, .font: font])
+    }
 
     override func draw(_ rect: CGRect) {
-        let path = UIBezierPath()
-        path.addArc(withCenter: CGPoint(x: bounds.midX, y: bounds.midY), radius: 100, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
-        UIColor.green.setFill()
-        UIColor.red.setStroke()
-        path.lineWidth = 5
-        path.stroke()
-        path.fill()
+        
+        let roundedRect = UIBezierPath(roundedRect: bounds, cornerRadius: 16)
+        roundedRect.addClip()
+        UIColor.white.setFill()
+        roundedRect.stroke()
+        //roundedRect.fill()
     }
 
 }
