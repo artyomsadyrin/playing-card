@@ -19,23 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-xI-E2i" customClass="PlayingCardView" customModule="playing_card" customModuleProvider="target">
-                                <rect key="frame" x="16" y="44" width="343" height="734"/>
+                                <rect key="frame" x="16" y="44" width="343" height="748"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7i5-xI-E2i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5WH-WH-eOc"/>
-                            <constraint firstItem="7i5-xI-E2i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CoE-mU-zPE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7i5-xI-E2i" secondAttribute="bottom" id="HyR-JG-1uI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7i5-xI-E2i" secondAttribute="trailing" constant="16" id="bOD-ah-HIE"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4CZ-ok-O6c"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WyW-Xa-Lje"/>
+                            <constraint firstAttribute="bottom" secondItem="7i5-xI-E2i" secondAttribute="bottom" constant="20" symbolic="YES" id="ZkY-JH-7Zu"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yMs-az-w45"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+            <point key="canvasLocation" x="52.5" y="22.183098591549296"/>
         </scene>
     </scenes>
 </document>
