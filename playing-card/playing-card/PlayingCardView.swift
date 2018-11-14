@@ -27,8 +27,9 @@ class PlayingCardView: UIView {
             setNeedsLayout()
         }
     }
+    
     @IBInspectable
-    var isFaceUp: Bool = true {
+    var isFaceUp: Bool = false {
         didSet {
             setNeedsDisplay()
             setNeedsLayout()
