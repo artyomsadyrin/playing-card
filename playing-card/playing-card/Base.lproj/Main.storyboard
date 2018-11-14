@@ -19,23 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-xI-E2i" customClass="PlayingCardView" customModule="playing_card" customModuleProvider="target">
-                                <rect key="frame" x="16" y="44" width="343" height="748"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="136.66666666666669" width="343" height="548.66666666666652"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="800" id="LJc-gv-rd0"/>
+                                    <constraint firstAttribute="width" secondItem="7i5-xI-E2i" secondAttribute="height" multiplier="5:8" id="hNA-lb-Cho"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7i5-xI-E2i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4CZ-ok-O6c"/>
-                            <constraint firstItem="7i5-xI-E2i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WyW-Xa-Lje"/>
-                            <constraint firstAttribute="bottom" secondItem="7i5-xI-E2i" secondAttribute="bottom" constant="20" symbolic="YES" id="ZkY-JH-7Zu"/>
-                            <constraint firstItem="7i5-xI-E2i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yMs-az-w45"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4CZ-ok-O6c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7i5-xI-E2i" secondAttribute="bottom" constant="16" id="8Ez-eY-KrA"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Dbd-cb-SCK"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ifp-tu-BiV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7i5-xI-E2i" secondAttribute="trailing" constant="16" id="bv6-rg-MOy"/>
+                            <constraint firstItem="7i5-xI-E2i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nG8-Qz-3rg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="7i5-xI-E2i" id="0VQ-9U-Vfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.5" y="22.183098591549296"/>
+            <point key="canvasLocation" x="-95" y="-1"/>
         </scene>
     </scenes>
 </document>
